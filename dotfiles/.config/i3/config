@@ -227,16 +227,14 @@ bar {
         tray_padding -1
 	tray_output primary
 	colors {
-            separator  #1f222d
-            background #1f222d
-            statusline #81a1c1
+        background   #2E3440
+        statusline   #D8DEE9
+        separator    #4C566A
 
-            #                   border  background text
-            focused_workspace  #1f222d #1f222d    #81a1c1
-            active_workspace   #1f222d #252936    #5e81ac
-            inactive_workspace #1f222d #1f222d    #4c566a
-            urgent_workspace   #1f222d #1f222d    #ee829f
-            binding_mode       #1f222d #81a1c1    #2e3440
+        focused_workspace  #88C0D0 #88C0D0 #2E3440
+        active_workspace   #4C566A #4C566A #D8DEE9
+        inactive_workspace #3B4252 #3B4252 #D8DEE9
+        urgent_workspace   #BF616A #BF616A #2E3440
     }
 }
 
@@ -259,7 +257,8 @@ for_window [class="GParted"] floating enable border normal
 for_window [class="Lxappearance"] floating enable border normal
 for_window [class="pavucontrol"] floating enable
 for_window [class="Audacity"] floating enable
-for_window [class="Blueman-manager"] floating enable
+for_window [class="Blueman-manager"] floating enable, move position center
+for_window [class="Spotify"] floating enable, move position center
 
 # window rules, you can find the window class using xprop
 for_window [class=".*"] border pixel 4
@@ -276,7 +275,7 @@ for_window [class=Xfburn|GParted|System-config-printer.py|Lxtask|Pavucontrol|Exo
 #############################
 
 # Set inner/outer gaps
-gaps inner 2
+gaps inner 5
 gaps outer 5
 
 # Additionally, you can issue commands with the following syntax. This is useful to bind keys to changing the gap size.
